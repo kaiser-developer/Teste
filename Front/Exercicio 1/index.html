@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Venda medicamentos controlados</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="d-inline-block align-top" alt="">
+            </a>
+        </nav>
+    </header>
+    <main class="container">
+        <form action="">
+            <div class="form-group" width="20px">
+                <label for="masculino">CRM do médico:</label>
+                <input class="form-control" type="text" required id="crm-medico">
+            </div>
+            <div class="form-group">
+                <label for="masculino">Nome do médico:</label>
+                <input class="form-control" type="text" required id="nome-medico">
+            </div>
+            <div class="form-group">
+                <label for="masculino">Data da receita:</label>
+                <input class="form-control" type="date" required id="data-receita">
+            </div>
+            <div class="form-group">
+                <label for="masculino">Quantidade de caixas:</label>
+                <input class="form-control" type="number" required id="qtd-caixas" min="0">
+            </div>
+            <div class="form-group">
+                <label for="masculino">Nome do paciente:</label>
+                <input class="form-control" type="text" required id="nome-paciente">
+            </div>
+            <div class="form-group">
+                <label for="masculino">CPF do paciente:</label>
+                <input class="form-control" type="text" required id="cpf-paciente">
+            </div>
+            <div class="form-group">
+                <label for="masculino">Data de nascimento do médico</label>
+                <input class="form-control" type="date" required id="data-nasc-paciente">
+            </div>
+            <label for="masculino">Sexo do paciente:</label>
+            <div class="form-group">
+                <div class="form-check form-check form-check-inline">
+                    <input class="form-check-input" name="genero" type="radio" id="masculino" value="masculino" checked>
+                    <label class="form-check-label" for="masculino">
+                        Masculino
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="genero" type="radio" id="feminino" value="feminino">
+                    <label class="form-check-label" for="feminino">
+                        feminino
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="genero" type="radio" id="nao-declarado" value="nao-declarado">
+                    <label class="form-check-label" for="nao-declarado">
+                        Prefiro não declarar
+                    </label>
+                </div>
+            </div>
+
+            <label for="masculino">Forma de envio:</label>
+            <div class="form-group">
+                <div class="form-check form-check form-check-inline">
+                    <input class="form-check-input" name="forma-envio" type="radio" id="arquivo" value="arquivo" checked>
+                    <label class="form-check-label" for="arquivo">
+                        Upload arquivo
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="forma-envio" type="radio" id="whatsapp" value="whatsapp">
+                    <label class="form-check-label" for="whatsapp">
+                        Whatsapp
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" name="forma-envio" type="radio" id="email" value="email">
+                    <label class="form-check-label" for="email">
+                        Email
+                    </label>
+                </div>
+            </div>
+            <div class="form-group" id="upload-arquivo">
+                <div id="remover-upload">
+                    <label for="masculino">Faça o upload do arquivo</label>
+                    <input type="file" required id="data-nasc-paciente">
+                </div>
+            </div>
+            <div class="form-group" id="button">
+                <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+    <script src="js/validacao.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,9 @@
+form {
+    display: block;
+    margin: 0 25vw;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
